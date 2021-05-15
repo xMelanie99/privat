@@ -1,0 +1,507 @@
+body {
+    background-image: url("CSS-pictures/bg.png");
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0);
+    color:#6f6f6f
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-areas: ". nav ."  ". main ." ". footer .";
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 15% auto 15%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    height: auto;
+    background-color: rgb(241, 255, 255);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+}
+
+footer {
+    background-color: rgba(57, 81, 97, 0.932);
+    grid-row: 3 span;
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+strong {
+    font-weight: lighter;
+    color: rgba(146, 146, 146, 0.932);
+    padding-right: 40px;
+    padding-left: 40px;
+}
+#burgermenu {
+    display:none;
+}
+
+#burgermenu div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+#burgerclick {
+    display:none;
+}
+
+.dropdown {
+    padding-bottom: 1rem;
+    text-align: center;
+    display:none;
+}
+
+
+/*NAVIGATION*/
+#navcontent {
+    position: relative;
+    padding: 25px;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*Maus-HOVER*/
+#navcontent a:hover {                                           
+    padding: 26px 0px 26px 0px;
+    background-color:rgba(197, 228, 242, 0.398);
+} 
+
+#act {
+    padding: 26px 0px 26px 0px;
+    background-color:rgba(197, 228, 242, 0.145);
+}
+
+a.nav {                                                    
+    text-decoration: none;
+}
+
+/*weisse Navi Schrift*/
+strong {                                                        
+    color: white;
+} 
+
+ /*fixierte Navigation*/
+nav {  
+    background-color:  rgba(57, 81, 97, 0.932);                                                        
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+ /*Obere Abstand*/
+header {                                                    
+    margin-top: 20px;
+}
+
+ /* allg. Überschriften */
+h1, h2 {
+    
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*TOP Sprung*/
+.zurück-top {  
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;                                                 
+    text-decoration: none;
+    color: rgba(57, 81, 97, 0.932);
+}
+
+/*Sprung HOVER*/
+.zurück-top:hover {                                             
+    color:rgb(125, 167, 199);
+}
+
+ /*footer-IMPRESSUM*/
+.box {
+    font-size: small;                                                         
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px; 
+    color:rgba(255, 255, 255, 0.952);
+    align-self: center;
+} 
+
+.box h5 {
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.kontakt {
+    margin: 5px;
+}
+
+/*social media - Box-Modell*/
+.box2 {
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* social media - Icons*/
+.fa {
+    padding:10px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 10%;
+}
+
+/*social media - HOVER*/
+.fa:hover {
+    color: rgb(125, 167, 199);
+  }
+
+.fa-instagram {
+    color: rgb(125, 167, 199);
+    text-align: center;
+  }
+
+.fa-twitter {
+    color:rgb(125, 167, 199);
+    text-align: center;
+  }
+
+.fa-facebook {
+    color:rgb(125, 167, 199);
+    text-align: center;
+  }
+
+
+
+/*ÜBER MICH*/
+
+
+/*ZITAT*/
+.zitat {                                                          
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+}
+
+/*BILDER*/
+.gallery {                                                       
+    display: block;
+    width: 198px; 
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.gallery1 {
+    display: block;
+    width: 198px; 
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#text-me {
+    text-align: center;
+    padding: 20px;
+}
+
+ /*HFU-TEXT ZENTRIERUNG*/
+#hfu-text {                                                    
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/*PORTFOLIO-SEITE*/
+
+.container {
+    display: flex;
+    max-width: 780px;
+    /* overflow: none; */
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*einzelne BILDER */
+.pic-style { 
+    margin: 5px;                                          
+    box-shadow: 2px 2px 2px 2px rgba(61, 60, 60, 0.138);
+    width: 700px;
+    height: auto;
+} 
+
+/*BILDERUNTERSCHRIFT-TEXT*/
+.p {
+    justify-content: center;
+    width: 208px;
+}
+
+/*Instagram style*/
+.link {                                                    
+    text-decoration: none;
+
+    color:  #aeccae;
+}
+
+/*Instagram HOVER*/
+.link:hover {                                               
+    color: rgb(115, 167, 115);
+}
+
+ /*Text - zentriert*/
+#text {                                                                                                          
+    text-align: center;
+    padding: 60px 0 50px 0;
+}
+
+.picturecontainer {
+    padding: 0 9%;
+}
+
+
+
+/*KONTAKT-SEITE*/
+
+
+
+/*Pseudo-Test*/
+span::before {
+    content: ":)";
+    width: 55px;
+    height: 15px;
+}
+
+/*Überschriften*/
+#h4 h4 {
+    margin:0;
+}
+
+/*Haupttext*/
+.kontakt-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+ 
+}
+
+.kontakt-box {
+    display: inline-block;
+    font-size: medium;                                                   
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 300px;
+    padding: 50px;
+
+    background-color: rgb(241, 255, 255);
+}
+
+/*social media Text*/
+#text-sm {
+    margin: 13px;
+}
+
+/*ICONS im Hauptext*/
+.box-icon {
+    font-size: 20px;                                                          
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+ 
+}
+
+.kontakt-box2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#b-kontakt{
+    font-size: 30px;
+}
+
+/*Kontaktfelder*/
+input {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    border: 1px solid grey;
+}
+
+/*Nachrichtfeld*/
+#subject {
+    height: 100px;
+    width: 90%;
+}
+
+/* Datenschutz*/
+.Datenschutz {
+    color: grey;
+    font-size: small;
+}
+
+
+.h3-kontakt {
+    margin-top: 0;
+}
+
+/*Schriftart im Nachrichtfeld*/
+textarea {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*senden Button*/
+#senden {
+    text-decoration: none;
+    padding: 5px;
+    color: gray;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    
+} 
+
+/*senden hover*/
+#senden:hover {
+    background-color:rgb(115, 167, 115);
+}
+
+@keyframes rainbow {
+    0%   {background-color:#f8e5e5; left:0px; top:0px;}
+    25%  {background-color:rgb(245, 245, 168); left:200px; top:0px;}
+    50%  {background-color:rgb(159, 233, 169); left:200px; top:200px;}
+    75%  {background-color:rgb(150, 215, 235); left:0px; top:200px;}
+    100% {background-color:rgb(241, 230, 245); left:0px; top:0px;}
+  }
+  
+.animation {
+    animation-name: rainbow;
+    width: 80px;
+    height: 50px;
+    animation-duration: 4s ;
+    animation-iteration-count:infinite;
+}
+
+@keyframes uwu {
+    0%   {color:#f3c6c6; left:0px; top:0px;}
+    25%  {color:rgb(224, 224, 127); left:200px; top:0px;}
+    50%  {color:rgb(159, 233, 169); left:200px; top:200px;}
+    75%  {color:rgb(150, 215, 235); left:0px; top:200px;}
+    100% {color:rgb(223, 191, 235); left:0px; top:0px;}
+  }
+
+.fa-instagram{
+    animation-name: uwu;
+    animation-duration: 4s ;
+    animation-iteration-count:infinite;
+}
+
+.fa-twitter{
+    animation-name: uwu;
+    animation-duration: 4s ;
+    animation-iteration-count:infinite;
+}
+
+.fa-facebook{
+    animation-name: uwu;
+    animation-duration: 4s ;
+    animation-iteration-count:infinite;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .grid-layout {
+        grid-template-columns: 22% auto 22%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .grid-layout {
+        grid-template-areas: "nav" "main" "footer";
+        grid-template-columns: auto;
+    }
+}
+
+
+/* Smartphone */
+@media screen and (max-width: 600px) {
+    
+    .grid-layout {
+        grid-template-areas: "nav" "main" "footer";
+        grid-template-columns: auto;
+    }
+    .box {
+        height: 160px;
+        padding: 20px;
+    }
+    .box2 {
+        padding: 5px;
+    }
+    .pic-style {
+        width: 300px;
+        height: auto;
+    }
+    .zurück-top {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+  }
+  
+
+
+  /* kleines Smartphone */
+@media screen and (max-width: 400px) {
+    #navcontent {
+        display: none;
+      }
+      #burgermenu {
+        display: block;
+        justify-content: center;
+        padding: 0.7rem 0 ;
+        width: 35px;
+        margin: 0 auto;
+      }
+      #burgerclick:checked+.dropdown {
+          display:block;
+      }
+    #act {
+        display: none;
+    }
+    strong {
+        font-size: 25px;
+    }
+    .kontakt-box {
+        padding: 25px;
+    }
+}
+
+.ImpressSM {
+    margin-top: 0px;
+    font-size: 17px;
+}
+
+ 
+
+      
