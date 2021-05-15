@@ -152,45 +152,6 @@ h1, h2 {
     margin: 5px;
 }
 
-/*social media - Box-Modell*/
-.box2 {
-    text-align: center;
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-/* social media - Icons*/
-.fa {
-    padding:10px;
-    font-size: 30px;
-    text-decoration: none;
-    width: 10%;
-}
-
-/*social media - HOVER*/
-.fa:hover {
-    color: rgb(125, 167, 199);
-  }
-
-.fa-instagram {
-    color: rgb(125, 167, 199);
-    text-align: center;
-  }
-
-.fa-twitter {
-    color:rgb(125, 167, 199);
-    text-align: center;
-  }
-
-.fa-facebook {
-    color:rgb(125, 167, 199);
-    text-align: center;
-  }
-
-
-
 /*ÜBER MICH*/
 
 
@@ -260,13 +221,12 @@ h1, h2 {
 /*Instagram style*/
 .link {                                                    
     text-decoration: none;
-
-    color:  #aeccae;
+    color:  rgb(125, 167, 199);
 }
 
 /*Instagram HOVER*/
 .link:hover {                                               
-    color: rgb(115, 167, 115);
+    color: rgb(125, 167, 199);
 }
 
  /*Text - zentriert*/
@@ -312,7 +272,7 @@ span::before {
     text-align: center;
     box-sizing: border-box;
     height: auto;
-    width: 300px;
+    width: 400px;
     padding: 50px;
 
     background-color: rgb(241, 255, 255);
