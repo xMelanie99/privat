@@ -198,7 +198,6 @@ h1, h2 {
 .container {
     display: flex;
     max-width: 780px;
-    /* overflow: none; */
     margin: auto;
     flex-direction: column;
     align-items: center;
@@ -212,34 +211,25 @@ h1, h2 {
     height: auto;
 } 
 
-/*BILDERUNTERSCHRIFT-TEXT*/
-.p {
-    justify-content: center;
-    width: 208px;
-}
-
-/*Instagram style*/
-.link {                                                    
-    text-decoration: none;
-    color:  rgb(125, 167, 199);
-}
-
-/*Instagram HOVER*/
-.link:hover {                                               
-    color: rgb(125, 167, 199);
-}
-
- /*Text - zentriert*/
-#text {                                                                                                          
-    text-align: center;
-    padding: 60px 0 50px 0;
+video {
+    max-width: 700px;
+    width: auto;
+    height: auto;
+    margin: 5px;
 }
 
 .picturecontainer {
     padding: 0 9%;
 }
 
+.link {
+    color:rgba(132, 162, 182, 0.932);
+    text-decoration: none;
+}
 
+.link:hover {
+   color: rgba(95, 132, 156, 0.932);
+}
 
 /*KONTAKT-SEITE*/
 
@@ -301,91 +291,13 @@ span::before {
     font-size: 30px;
 }
 
-/*Kontaktfelder*/
-input {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-    height: 30px;
-    border: 1px solid grey;
-}
-
-/*Nachrichtfeld*/
-#subject {
-    height: 100px;
-    width: 90%;
-}
-
-/* Datenschutz*/
-.Datenschutz {
-    color: grey;
-    font-size: small;
-}
-
-
 .h3-kontakt {
     margin-top: 0;
 }
 
-/*Schriftart im Nachrichtfeld*/
-textarea {
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-/*senden Button*/
-#senden {
-    text-decoration: none;
-    padding: 5px;
-    color: gray;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid grey;
-    
-} 
-
-/*senden hover*/
-#senden:hover {
-    background-color:rgb(115, 167, 115);
-}
-
-@keyframes rainbow {
-    0%   {background-color:#f8e5e5; left:0px; top:0px;}
-    25%  {background-color:rgb(245, 245, 168); left:200px; top:0px;}
-    50%  {background-color:rgb(159, 233, 169); left:200px; top:200px;}
-    75%  {background-color:rgb(150, 215, 235); left:0px; top:200px;}
-    100% {background-color:rgb(241, 230, 245); left:0px; top:0px;}
-  }
-  
-.animation {
-    animation-name: rainbow;
-    width: 80px;
-    height: 50px;
-    animation-duration: 4s ;
-    animation-iteration-count:infinite;
-}
-
-@keyframes uwu {
-    0%   {color:#f3c6c6; left:0px; top:0px;}
-    25%  {color:rgb(224, 224, 127); left:200px; top:0px;}
-    50%  {color:rgb(159, 233, 169); left:200px; top:200px;}
-    75%  {color:rgb(150, 215, 235); left:0px; top:200px;}
-    100% {color:rgb(223, 191, 235); left:0px; top:0px;}
-  }
-
-.fa-instagram{
-    animation-name: uwu;
-    animation-duration: 4s ;
-    animation-iteration-count:infinite;
-}
-
-.fa-twitter{
-    animation-name: uwu;
-    animation-duration: 4s ;
-    animation-iteration-count:infinite;
-}
-
-.fa-facebook{
-    animation-name: uwu;
-    animation-duration: 4s ;
-    animation-iteration-count:infinite;
+.ImpressSM {
+    margin-top: 0px;
+    font-size: 17px;
 }
 
 /* Desktop */
@@ -401,7 +313,6 @@ textarea {
         grid-template-columns: auto;
     }
 }
-
 
 /* Smartphone */
 @media screen and (max-width: 600px) {
@@ -427,9 +338,14 @@ textarea {
     footer {
         display: none;
     }
+    video {
+        max-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
   }
-  
-
+ 
 
   /* kleines Smartphone */
 @media screen and (max-width: 400px) {
@@ -462,10 +378,7 @@ textarea {
     }
 }
 
-.ImpressSM {
-    margin-top: 0px;
-    font-size: 17px;
-}
+
 
  
 
