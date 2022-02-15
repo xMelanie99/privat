@@ -116,7 +116,7 @@ h1, h2 {
 }
 
 /*TOP Sprung*/
-.zurück-top {  
+.back-top {  
     display: flex;
     height: 200px;
     justify-content: center;
@@ -126,7 +126,7 @@ h1, h2 {
 }
 
 /*Sprung HOVER*/
-.zurück-top:hover {                                             
+.back-top:hover {                                             
     color:rgb(125, 167, 199);
 }
 
@@ -332,7 +332,7 @@ span::before {
         width: 300px;
         height: auto;
     }
-    .zurück-top {
+    .back-top {
         display: none;
     }
     footer {
