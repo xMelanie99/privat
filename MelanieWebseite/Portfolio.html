@@ -28,71 +28,68 @@
         </div>
     </nav>
 
+    <!-- Modal (Pop-up) -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="modal-content" id="img01">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+        <div id="caption"></div>
+    </div>
+
     <div id="top"></div>
 
     <main>
-        <div id>
+        <div>
             <h1>PORTFOLIO</h1>
 
             <div class="container">
-
+                <!-- Bilder -->
                 <div class="pics-text">
-                    <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Cereal">
+                    <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Cereal" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Baker">
+                    <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Baker" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim-Light-Wine">
+                    <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim-Light-Wine" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="architecture">
+                    <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="architecture" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="light art">
+                    <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="light art" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="light-art">
+                    <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="light-art" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="blackforest">
+                    <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="blackforest" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="photoshop-360°">
+                    <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="photoshop-360°" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon-animal">
+                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon-animal" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER" />
+                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style" alt="tressure - BLENDER">
+                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style" alt="treasure - BLENDER" onclick="openModal(this)">
                 </div>
-
                 <div class="pics-text">
-                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="fish - BLENDER">
+                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="fish - BLENDER" onclick="openModal(this)">
                 </div>
 
                 <video src="Videos/Animation-UBoot.mp4" controls> </video>
-
                 <video src="Videos/Unterwasser-Goldfisch-Animation.mp4" controls> </video>
 
-                <p> </p>
-                
-                <p>Upon request, I would be happy to show you additional work in the areas of design, marketing, and advertising. However, these are not intended for public access. Thank you for your understanding.</p>
+                <p></p>
 
-
+                <p>Upon request, I would be happy to show you additional work in the areas of design, marketing, and
+                    advertising. However, these are not intended for public access. Thank you for your understanding.
+                </p>
             </div>
 
             <div class="back-top">
@@ -111,6 +108,38 @@
                     melanie.panida.mueller@hs-furtwangen.de </a> </p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Funktion zum Öffnen des Modals mit dem angeklickten Bild
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block"; // Zeigt das Modal an
+            modalImg.src = img.src; // Setzt das Bild im Modal auf das angeklickte Bild
+            captionText.innerHTML = img.alt; // Setzt den Bildtitel als Beschreibung
+            currentIndex = Array.from(img.parentNode.parentNode.children).indexOf(img.parentNode); // Bestimmt den Index des angeklickten Bildes
+        }
+
+        // Funktion zum Schließen des Modals
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Versteckt das Modal
+        }
+
+        // Funktion zum Wechseln der Bilder (Prev / Next)
+        var currentIndex = 0;
+        function changeImage(direction) {
+            var images = document.querySelectorAll(".container .pic-style");
+            currentIndex = (currentIndex + direction + images.length) % images.length; // Berechnet den nächsten Index
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modalImg.src = images[currentIndex].src;
+            captionText.innerHTML = images[currentIndex].alt;
+        }
+    </script>
 </body>
 
 </html>
