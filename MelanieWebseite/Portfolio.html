@@ -8,6 +8,9 @@
     <title>Portfolio</title>
     <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="Stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+
 </head>
 
 <body class="grid-layout">
@@ -26,7 +29,7 @@
             <a href="Portfolio.html" id="act" class="nav"><strong> PORTFOLIO </strong></a>
             <a href="Kontakt.html" class="nav"><strong> CONTACT </strong></a>
         </div>
-        
+
     </nav>
 
     <!-- Modal (Pop-up) -->
@@ -42,55 +45,191 @@
 
     <main>
         <div>
-            <h1>PORTFOLIO</h1>
-
+            <h1>Advertising</h1>
             <div class="container">
-                <!-- Bilder -->
+                <!-- Advertising -->
                 <div class="pics-text">
-                    <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Cereal" onclick="openModal(this)">
+                    <img src="pictures-HTML/ACE-Lesung-Holzaufsteller.jpg" class="pic-style"
+                        alt="Europapark ACE wooden display 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Baker" onclick="openModal(this)">
+                    <img src="pictures-HTML/Werbung_im_Park.jpg" class="pic-style"
+                        alt="Europapark ACE wooden display in the park 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim-Light-Wine" onclick="openModal(this)">
+                    <img src="pictures-HTML/SocialMedia_Europapark.jpg" class="pic-style"
+                        alt="Created social media post for Europapark channels 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="architecture" onclick="openModal(this)">
+                    <img src="pictures-HTML/MackNeXT_Weihnachtskarte_Geweih.jpg" class="pic-style"
+                        alt="Christmas card for MackNext 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="light art" onclick="openModal(this)">
+                    <img src="pictures-HTML/MackNeXT_Weihnachtskarte_Lichterkette.jpg" class="pic-style"
+                        alt="Christmas card for MackNext 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="light-art" onclick="openModal(this)">
+                    <img src="pictures-HTML/MackNeXT_Weihnachtskarte_Schnee.jpg" class="pic-style"
+                        alt="Christmas card for MackNext 2021" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="blackforest" onclick="openModal(this)">
+                    <img src="pictures-HTML/HKB_Plakat_November_2024.jpg" class="pic-style" alt="HKB Poster 2024"
+                        onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="photoshop-360°" onclick="openModal(this)">
+                    <img src="pictures-HTML/HKB_Flyer_achtseiter_November_2024_WEB_Seite_1.jpg" class="pic-style"
+                        alt="HKB Flyer outside 2024" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon-animal" onclick="openModal(this)">
+                    <img src="pictures-HTML/HKB_Flyer_achtseiter_November_2024_WEB_Seite_2.jpg" class="pic-style"
+                        alt="HKB Flyer inside 2024" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER" onclick="openModal(this)">
+                    <img src="pictures-HTML/HFU_LayUp_Aufkleber_5x2m_09_23.jpg" class="pic-style"
+                        alt="HFU Stickers for the floor 2023" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style" alt="treasure - BLENDER" onclick="openModal(this)">
+                    <img src="pictures-HTML/Weihnachtskarte_HFU_2024.jpg" class="pic-style"
+                        alt="Christmas card for MackNext 2024" onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
-                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="fish - BLENDER" onclick="openModal(this)">
+                    <img src="pictures-HTML/Weihnachtskarte_HFU_20242.jpg" class="pic-style"
+                        alt="Christmas card for MackNext 2024" onclick="openModal(this)">
                 </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/HFU_Tasse_20_02_2024_neu.jpg" class="pic-style"
+                        alt="HFU Mug Merchandise 2024" onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/HFU_Lenyard_2023-01.png" class="pic-style" alt="HFU Lenyard Merchandise"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Classic_White_S.jpg" class="pic-style" alt="HFU Socks Merchandise 2023"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Classic_Schnecke_White.jpg" class="pic-style"
+                        alt="HFU Socks Merchandise 2023" onclick="openModal(this)">
+                </div>
+            </div>
 
-                <video src="Videos/Animation-UBoot.mp4" controls> </video>
-                <video src="Videos/Unterwasser-Goldfisch-Animation.mp4" controls> </video>
-
+            <h1>Study-Related Projects</h1>
+            <div class="container">
+                <!-- Study-Related Projects -->
+                <div class="pics-text">
+                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon-animal"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style" alt="treasure - BLENDER"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="fish - BLENDER"
+                        onclick="openModal(this)">
+                </div>
                 <p></p>
+                <p></p>
+                <!-- PDF Anzeige -->
+                <div class="pdf-container">
+                    <a href="pictures-HTML/Storyboard.pdf" target="_blank">
+                        <img src="pictures-HTML/Storyboard-thumbnail.jpg" class="pic-style" alt="Storyboard PDF" />
+                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
+                    </a>
+                </div>
+                <div class="pdf-container">
+                    <a href="pictures-HTML/UPPlant_Gruppenprojekt_Mockups_Export.pdf" target="_blank">
+                        <img src="pictures-HTML/upplant-thumbnail.jpg" class="pic-style" alt="UpPlant Gruppenprojekt" />
+                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
+                    </a>
+                </div>
+                <div class="pdf-container">
+                    <a href="pictures-HTML/GameDesign_Document_Aria (1).pdf" target="_blank">
+                        <img src="pictures-HTML/aria-thumbnail.jpg" class="pic-style" alt="Game Design Document" />
+                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
+                    </a>
+                </div>
+                <div class="pdf-container">
+                    <a href="pictures-HTML/Bosch_Projekt_Dokumentation (1).pdf" target="_blank">
+                        <img src="pictures-HTML/bosch-thumbnail.jpg" class="pic-style"
+                            alt="Bosch Project Documentation" />
+                            <div class="pdf-label">PDF</div>  <!-- PDF Label -->
+                    </a>
+                </div>
+            </div>
 
-                <p>Upon request, I would be happy to show you additional work in the areas of design, marketing, and
-                    advertising. However, these are not intended for public access. Thank you for your understanding.
-                </p>
+            <h1>Graphics & Animations</h1>
+            <div class="container">
+                <!-- Graphics & Animations -->
+                <div class="pics-text">
+                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon Animal"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - Boat made with BLENDER"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style"
+                        alt="Treasure Chest made with BLENDER" onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="Fish made with BLENDER"
+                        onclick="openModal(this)">
+                </div>
+            </div>
+
+            <h1>Photography</h1>
+            <div class="container">
+                <!-- Photography -->
+                <div class="pics-text">
+                    <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Product Photography - Cereal"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Product Photography - Baker"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim Light Art"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="Architecture"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="Light art made from light source"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="Light art made from steel wool"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Stahlwolle.jpg" class="pic-style" alt="Light art made from steel wool"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="Blackforest"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="Photoshop 360°"
+                        onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Raabe.jpg" class="pic-style" alt="Raven and rain" onclick="openModal(this)">
+                </div>
+                <div class="pics-text">
+                    <img src="pictures-HTML/Venice_Street.jpg" class="pic-style" alt="Street Photography"
+                        onclick="openModal(this)">
+                </div>
             </div>
 
             <div class="back-top">
@@ -98,6 +237,7 @@
             </div>
         </div>
     </main>
+
 
     <footer>
         <div class="box">
@@ -112,15 +252,26 @@
 
     <!-- JavaScript -->
     <script>
-        // Funktion zum Öffnen des Modals mit dem angeklickten Bild
-        function openModal(img) {
+
+        // Event-Listener für Button, der die Seite lädt und rendert
+        document.querySelector("button").addEventListener("click", loadPDF);
+
+
+
+        function openModal(element) {
             var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("img01");
+            var modalImg = document.getElementById("img01"); // Bild-Element im Modal
             var captionText = document.getElementById("caption");
+
             modal.style.display = "block"; // Zeigt das Modal an
-            modalImg.src = img.src; // Setzt das Bild im Modal auf das angeklickte Bild
-            captionText.innerHTML = img.alt; // Setzt den Bildtitel als Beschreibung
-            currentIndex = Array.from(img.parentNode.parentNode.children).indexOf(img.parentNode); // Bestimmt den Index des angeklickten Bildes
+
+            // Überprüfen, ob es sich um ein Bild handelt
+            if (element.tagName === "IMG") {
+                modalImg.src = element.src; // Bild im Modal anzeigen
+                captionText.innerHTML = element.alt || "Bild ohne Beschreibung"; // Bildbeschreibung setzen
+            }
+
+            currentIndex = Array.from(element.parentNode.parentNode.children).indexOf(element.parentNode); // Bestimmt den Index des angeklickten Bildes
         }
 
         // Funktion zum Schließen des Modals
