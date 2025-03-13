@@ -26,9 +26,11 @@ main {
     height: auto;
     background-color: rgb(241, 255, 255);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 20px;
     text-align: justify;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 0px; /* Adds space below the fixed nav */
 }
 
 footer {
