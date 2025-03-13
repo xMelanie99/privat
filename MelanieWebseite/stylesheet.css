@@ -674,8 +674,8 @@ nav {
 
     .grid-layout {
         grid-template-columns: 1fr;
-        /* Einspaltiges Layout */
     }
+
 
     .container {
         display: grid;
@@ -684,6 +684,16 @@ nav {
 
     #burgerclick:checked~.dropdown {
         display: block;
+    }
+    nav {
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .kontakt-box {
+        padding: 10px;
+        width: auto;
     }
 }
 
