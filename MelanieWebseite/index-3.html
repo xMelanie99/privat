@@ -12,17 +12,15 @@
 
 <body class="grid-layout">
     <nav>
-        <label id="burgerlabel" for="burgerclick">
-            <img id="burgermenu" src="CSS-pictures/burgermenu.png" alt="Burgermenu">
-        </label>
+    
         <input type="checkbox" id="burgerclick">
         <div class="dropdown">
-            <a href="index-3.html" id = "act" class="nav"><strong> ABOUT ME </strong></a>
+            <a href="index-3.html" id="act" class="nav"><strong> ABOUT ME </strong></a>
             <a href="Portfolio.html" class="nav"><strong> PORTFOLIO </strong></a>
             <a href="Kontakt.html" class="nav"><strong> CONTACT </strong></a>
         </div>
         <div id="navcontent">
-            <a href="index-3.html" id = "act" class="nav"><strong> ABOUT ME </strong></a>
+            <a href="index-3.html" id="act" class="nav"><strong> ABOUT ME </strong></a>
             <a href="Portfolio.html" class="nav"><strong> PORTFOLIO </strong></a>
             <a href="Kontakt.html" class="nav"><strong> CONTACT </strong></a>
         </div>
@@ -34,9 +32,14 @@
         <div>
             <h2 class="left-aligned">Hey and welcome to my very first created website!</h2>
 
-            <p> This page gives you a quick insight into my professional experience, skills, and past projects. Instead of a traditional application folder, you’ll find everything here in an interactive and well-structured way – making it easier for you to get to know me. </p>
-            <p> Why a website? Simple: I don’t just want to impress with dry facts, but actually show you what I’ve worked on and what drives me. My resume, projects, and a few personal insights are waiting for you! Feel free to look around, and if you have any questions or would like to get in touch, just drop me a message – I’d love to connect!  </p>
-            
+            <p> This page gives you a quick insight into my professional experience, skills, and past projects. Instead
+                of a traditional application folder, you’ll find everything here in an interactive and well-structured
+                way – making it easier for you to get to know me. </p>
+            <p> Why a website? Simple: I don’t just want to impress with dry facts, but actually show you what I’ve
+                worked on and what drives me. My resume, projects, and a few personal insights are waiting for you! Feel
+                free to look around, and if you have any questions or would like to get in touch, just drop me a message
+                – I’d love to connect! </p>
+
             <div class="about-container">
                 <h2>About me</h2>
                 <img src="pictures-HTML/picture_me.jpg" class="about-image" alt="Bild von mir">
@@ -47,23 +50,23 @@
                     and I love to gain new experiences.
                 </p>
             </div>
-            
-            
+
+
             <div class="university-container">
                 <h2>My University</h2>
                 <img src="pictures-HTML/hfu_logo_vector_4C.png" class="university-logo" alt="University Logo">
 
                 <p>
-                    I study Media Informatics at Furtwangen University in the beautiful and cold Black Forest. 
-                    Media Informatics is primarily about the technical and creative areas of computer science, 
-                    media technology, and design. One of the tasks is, for example, the design and programming 
-                    of websites with HTML5, CSS, and TypeScript. Additionally, it includes basic knowledge about 
+                    I study Media Informatics at Furtwangen University in the beautiful and cold Black Forest.
+                    Media Informatics is primarily about the technical and creative areas of computer science,
+                    media technology, and design. One of the tasks is, for example, the design and programming
+                    of websites with HTML5, CSS, and TypeScript. Additionally, it includes basic knowledge about
                     User Experience Design and Media Business.
                 </p>
             </div>
-            
-            
-            
+
+
+
 
             <div class="back-top">
                 <h4><a href="#top" class="back-top">Back to the top</a></h4>
@@ -78,9 +81,19 @@
             <p class="kontakt"> Marktplatz 27 </p>
             <p class="kontakt"> 78120 Furtwangen im Schwarzwald </p>
             <p class="kontakt"> E-mail: <a href="mailto:mueller.melanie.pa@googlemail.com" class="link">
-                mueller.melanie.pa@googlemail.com </a> </p>
+                    mueller.melanie.pa@googlemail.com </a> </p>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.back-top a').addEventListener('click', function (event) {
+            event.preventDefault(); // Verhindert das Standard-Verhalten des Links
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Weiches Scrollen nach oben
+            });
+        });
+    </script>
 </body>
 
 </html>

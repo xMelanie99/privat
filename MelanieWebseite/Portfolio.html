@@ -15,20 +15,22 @@
 
 <body class="grid-layout">
     <nav>
-        <label id="burgerlabel" for="burgerclick">
-            <img id="burgermenu" src="CSS-pictures/burgermenu.png" alt="Burgermenu">
-        </label>
         <input type="checkbox" id="burgerclick">
-        <div class="dropdown">
-            <a href="index-3.html" class="nav"><strong> ABOUT ME </strong></a>
-            <a href="Portfolio.html" id="act" class="nav"><strong> PORTFOLIO </strong></a>
-            <a href="Kontakt.html" class="nav"><strong> CONTACT </strong></a>
-        </div>
+        <!-- Normale Navigation, die ausgeblendet wird, wenn das Burger-Menü aktiv ist -->
         <div id="navcontent">
-            <a href="index-3.html" class="nav"><strong> ABOUT ME </strong></a>
-            <a href="Portfolio.html" id="act" class="nav"><strong> PORTFOLIO </strong></a>
-            <a href="Kontakt.html" class="nav"><strong> CONTACT </strong></a>
+            <a href="index-3.html" class="nav"><strong>ABOUT ME</strong></a>
+            <a href="Portfolio.html" id="act" class="nav"><strong>PORTFOLIO</strong></a>
+            <a href="Kontakt.html" class="nav"><strong>CONTACT</strong></a>
         </div>
+
+        <!-- Dropdown für kleinere Bildschirme -->
+        <div class="dropdown">
+            <a href="index-3.html" class="nav"><strong>ABOUT ME</strong></a>
+            <a href="Portfolio.html" id="act" class="nav"><strong>PORTFOLIO</strong></a>
+            <a href="Kontakt.html" class="nav"><strong>CONTACT</strong></a>
+        </div>
+
+
 
     </nav>
 
@@ -118,10 +120,6 @@
             <div class="container">
                 <!-- Study-Related Projects -->
                 <div class="pics-text">
-                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon-animal"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
                     <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER"
                         onclick="openModal(this)">
                 </div>
@@ -133,108 +131,114 @@
                     <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="fish - BLENDER"
                         onclick="openModal(this)">
                 </div>
-                <p></p>
-                <p></p>
-                <!-- PDF Anzeige -->
-                <div class="pdf-container">
-                    <a href="pictures-HTML/Storyboard.pdf" target="_blank">
-                        <img src="pictures-HTML/Storyboard-thumbnail.jpg" class="pic-style" alt="Storyboard PDF" />
-                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
-                    </a>
+
+                <!-- Videos -->
+                <div class="pics-text">
+                    <video class="video" src="Videos/Animation-UBoot.mp4" autoplay loop muted
+                        onclick="openVideoModal(this)"></video>
+                    <div class="video-label">Video</div>
                 </div>
-                <div class="pdf-container">
-                    <a href="pictures-HTML/UPPlant_Gruppenprojekt_Mockups_Export.pdf" target="_blank">
-                        <img src="pictures-HTML/upplant-thumbnail.jpg" class="pic-style" alt="UpPlant Gruppenprojekt" />
-                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
-                    </a>
+                <div class="pics-text">
+                    <video class="video" src="Videos/Unterwasser-Goldfisch-Animation.mp4" autoplay loop muted
+                        onclick="openVideoModal(this)"></video>
+                    <div class="video-label">Video</div>
                 </div>
-                <div class="pdf-container">
-                    <a href="pictures-HTML/GameDesign_Document_Aria (1).pdf" target="_blank">
-                        <img src="pictures-HTML/aria-thumbnail.jpg" class="pic-style" alt="Game Design Document" />
-                        <div class="pdf-label">PDF</div>  <!-- PDF Label -->
-                    </a>
+                <div class="pics-text">
+                    <video class="video" src="Videos/3DCP_Abgabe_Mueller_Melanie_preview.mp4" autoplay loop muted
+                        onclick="openVideoModal(this)"></video>
+                    <div class="video-label">Video</div>
                 </div>
-                <div class="pdf-container">
-                    <a href="pictures-HTML/Bosch_Projekt_Dokumentation (1).pdf" target="_blank">
-                        <img src="pictures-HTML/bosch-thumbnail.jpg" class="pic-style"
-                            alt="Bosch Project Documentation" />
-                            <div class="pdf-label">PDF</div>  <!-- PDF Label -->
-                    </a>
+                <div class="pics-text">
+                    <video class="video" id="video1" src="Videos/Video_Interactive_Ink_Fusion.mp4" muted
+                        onclick="openVideoModal(this)"></video>
+                    <div class="video-label">Video</div>
                 </div>
             </div>
 
-            <h1>Graphics & Animations</h1>
-            <div class="container">
-                <!-- Graphics & Animations -->
-                <div class="pics-text">
-                    <img src="pictures-HTML/Polygontier.jpg" class="pic-style" alt="Polygon Animal"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - Boat made with BLENDER"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Schatzkiste-render.jpg" class="pic-style"
-                        alt="Treasure Chest made with BLENDER" onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Goldfisch.jpg" class="pic-style" alt="Fish made with BLENDER"
-                        onclick="openModal(this)">
-                </div>
+            <p></p>
+            <p></p>
+            <!-- PDF Anzeige -->
+            <div class="pdf-container">
+                <a href="pictures-HTML/Storyboard.pdf" target="_blank">
+                    <img src="pictures-HTML/Storyboard-thumbnail.jpg" class="pic-style" alt="Storyboard PDF" />
+                    <div class="pdf-label">PDF</div>
+                </a>
             </div>
+            <div class="pdf-container">
+                <a href="pictures-HTML/UPPlant_Gruppenprojekt_Mockups_Export.pdf" target="_blank">
+                    <img src="pictures-HTML/upplant-thumbnail.jpg" class="pic-style" alt="UpPlant Gruppenprojekt" />
+                    <div class="pdf-label">PDF</div>
+                </a>
+            </div>
+            <div class="pdf-container">
+                <a href="pictures-HTML/GameDesign_Document_Aria (1).pdf" target="_blank">
+                    <img src="pictures-HTML/aria-thumbnail.jpg" class="pic-style" alt="Game Design Document" />
+                    <div class="pdf-label">PDF</div>
+                </a>
+            </div>
+            <div class="pdf-container">
+                <a href="pictures-HTML/Bosch_Projekt_Dokumentation (1).pdf" target="_blank">
+                    <img src="pictures-HTML/bosch-thumbnail.jpg" class="pic-style" alt="Bosch Project Documentation" />
+                    <div class="pdf-label">PDF</div>
+                </a>
+            </div>
+            <div class="pdf-container">
+                <a href="pictures-HTML/IMI_Interactive_Ink_Fusion_Dokumentation_Mueller_Nguyen (2).pdf" target="_blank">
+                    <img src="pictures-HTML/ink-thumbnail.jpg" class="pic-style" alt="Ink Fusion" />
+                    <div class="pdf-label">PDF</div>
+                </a>
+            </div>
+        </div>
 
-            <h1>Photography</h1>
-            <div class="container">
-                <!-- Photography -->
-                <div class="pics-text">
-                    <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Product Photography - Cereal"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Product Photography - Baker"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim Light Art"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="Architecture"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="Light art made from light source"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="Light art made from steel wool"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Stahlwolle.jpg" class="pic-style" alt="Light art made from steel wool"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="Blackforest"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="Photoshop 360°"
-                        onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Raabe.jpg" class="pic-style" alt="Raven and rain" onclick="openModal(this)">
-                </div>
-                <div class="pics-text">
-                    <img src="pictures-HTML/Venice_Street.jpg" class="pic-style" alt="Street Photography"
-                        onclick="openModal(this)">
-                </div>
+        <h1>Photography</h1>
+        <div class="container">
+            <!-- Photography -->
+            <div class="pics-text">
+                <img src="pictures-HTML/Müsli.jpg" class="pic-style" alt="Product Photography - Cereal"
+                    onclick="openModal(this)">
             </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Bäcker.jpg" class="pic-style" alt="Product Photography - Baker"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Rim-light-2.jpg" class="pic-style" alt="Rim Light Art"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Architektur.jpg" class="pic-style" alt="Architecture" onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Lichtspiele.jpg" class="pic-style" alt="Light art made from light source"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Müller_M.jpg" class="pic-style" alt="Light art made from steel wool"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Stahlwolle.jpg" class="pic-style" alt="Light art made from steel wool"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Schwarzwald.jpg" class="pic-style" alt="Blackforest" onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/RoterSchlauch.jpg" class="pic-style" alt="Photoshop 360°"
+                    onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Raabe.jpg" class="pic-style" alt="Raven and rain" onclick="openModal(this)">
+            </div>
+            <div class="pics-text">
+                <img src="pictures-HTML/Venice_Street.jpg" class="pic-style" alt="Street Photography"
+                    onclick="openModal(this)">
+            </div>
+        </div>
 
-            <div class="back-top">
-                <h4><a href="#top" class="back-top">Back to the top</a></h4>
-            </div>
+        <div class="back-top">
+            <h4><a href="#top" class="back-top">Back to the top</a></h4>
+        </div>
         </div>
     </main>
 
@@ -252,36 +256,66 @@
 
     <!-- JavaScript -->
     <script>
+        document.querySelector('.back-top a').addEventListener('click', function (event) {
+            event.preventDefault(); // Verhindert das Standard-Verhalten des Links
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Weiches Scrollen nach oben
+            });
+        });
 
-        // Event-Listener für Button, der die Seite lädt und rendert
-        document.querySelector("button").addEventListener("click", loadPDF);
+        // Hole das Video Element
+        var video = document.getElementById('video1');
+
+        // Wenn der Benutzer mit der Maus über das Video fährt
+        video.addEventListener('mouseenter', function () {
+            video.play();
+            video.loop = true;
+            video.muted = false;
+        });
+
+        // Wenn die Maus das Video verlässt
+        video.addEventListener('mouseleave', function () {
+            video.pause();
+            video.currentTime = 0;
+            video.loop = false;
+            video.muted = true;
+        });
 
 
-
+        // Funktion zum Öffnen des Modals
         function openModal(element) {
             var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("img01"); // Bild-Element im Modal
+            var modalImg = document.getElementById("img01");
             var captionText = document.getElementById("caption");
 
-            modal.style.display = "block"; // Zeigt das Modal an
+            modal.style.display = "block"; // Modal anzeigen
 
-            // Überprüfen, ob es sich um ein Bild handelt
             if (element.tagName === "IMG") {
                 modalImg.src = element.src; // Bild im Modal anzeigen
                 captionText.innerHTML = element.alt || "Bild ohne Beschreibung"; // Bildbeschreibung setzen
             }
 
-            currentIndex = Array.from(element.parentNode.parentNode.children).indexOf(element.parentNode); // Bestimmt den Index des angeklickten Bildes
+            // Index des angeklickten Bildes speichern
+            currentIndex = Array.from(element.parentNode.parentNode.children).indexOf(element.parentNode);
         }
 
-        // Funktion zum Schließen des Modals
+        // Schließen beim Klicken auf das "X"
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function () {
             var modal = document.getElementById("myModal");
-            modal.style.display = "none"; // Versteckt das Modal
+            modal.style.display = "none"; // Modal schließen
         }
 
-        // Funktion zum Wechseln der Bilder (Prev / Next)
+        // Schließen beim Klicken auf den Hintergrund (Leerraum)
+        var modal = document.getElementById("myModal");
+        modal.onclick = function (event) {
+            if (event.target === modal) { // Prüft, ob der Klick auf den Hintergrund (nicht das Bild) war
+                modal.style.display = "none"; // Modal schließen
+            }
+        }
+
+        // Wechseln der Bilder im Modal (Prev / Next)
         var currentIndex = 0;
         function changeImage(direction) {
             var images = document.querySelectorAll(".container .pic-style");
@@ -291,6 +325,9 @@
             modalImg.src = images[currentIndex].src;
             captionText.innerHTML = images[currentIndex].alt;
         }
+
+
+
     </script>
 </body>
 
