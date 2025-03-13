@@ -646,9 +646,6 @@ nav {
         margin: 0 auto;
     }
 
-    #burgerclick:checked+.dropdown {
-        display: block;
-    }
 
     #act {
         display: none;
