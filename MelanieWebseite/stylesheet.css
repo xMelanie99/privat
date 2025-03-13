@@ -164,9 +164,7 @@ h2 {
     text-align: left;
     margin: 0;
     padding: 0;
-    margin-left: -40px;
-    margin-bottom: -30px;
-    /* Hier fügen Sie den Abstand hinzu, um ihn zu verringern */
+    /* Entferne die negativen Abstände */
 }
 
 
@@ -616,6 +614,25 @@ nav {
 
 /* Smartphone */
 @media screen and (max-width: 900px) {
+    p {
+        text-align: left;
+        /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
+    }
+
+    .about-container p{
+        text-align: left;
+        /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
+    }
+
+    .university-container p{
+        text-align: left;
+        /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
+    }
+
+    h2 {
+        font-size: 6.5vw;
+        /* Kleinere Schriftgröße bei kleineren Bildschirmen */
+    }
 
     #navcontent {
         display: none;
@@ -647,8 +664,8 @@ nav {
     }
 
     p {
-        width: 200px;
-        margin: 0 auto;
+        text-align: left;
+        /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
     }
 
     video {
@@ -667,7 +684,8 @@ nav {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
-    #burgerclick:checked ~ .dropdown {
+
+    #burgerclick:checked~.dropdown {
         display: block;
     }
 }
@@ -705,7 +723,8 @@ nav {
     }
 
     p {
-        width: 200px;
-        margin: 0 auto;
+        text-align: left;
+        /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
     }
+
 }
