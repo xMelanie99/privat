@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en"> <!-- Changed "de" to "en" to match the English content -->
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 <body class="grid-layout">
     <nav>
         <label id="burgerlabel" for="burgerclick">
-            <img id="burgermenu" src="CSS-pictures/burgermenu.png" alt="Burgermenu">
+            <img id="burgermenu" src="CSS-pictures/burgermenu.png" alt="Burger menu">
         </label>
         <input type="checkbox" id="burgerclick">
         <div class="dropdown">
@@ -28,7 +28,7 @@
         </div>
     </nav>
 
-    <div id="top"></div>
+    <div id="top"></div> <!-- Anchor point for scrolling to the top -->
 
     <main>
         <div>
@@ -44,7 +44,7 @@
 
             <div class="about-container">
                 <h2>About me</h2>
-                <img src="pictures-HTML/picture_me.jpg" class="about-image" alt="Bild von mir">
+                <img src="pictures-HTML/picture_me.jpg" class="about-image" alt="Picture of me">
                 <p>
                     My name is Melanie, and I am 25 years old. I was born in the beautiful city of Freiburg.
                     In my free time, I like to stay active. I am passionate about playing volleyball with friends,
@@ -52,7 +52,6 @@
                     and I love to gain new experiences.
                 </p>
             </div>
-
 
             <div class="university-container">
                 <h2>My University</h2>
@@ -67,9 +66,6 @@
                 </p>
             </div>
 
-
-
-
             <div class="back-top">
                 <h4><a href="#top" class="back-top">Back to the top</a></h4>
             </div>
@@ -79,20 +75,17 @@
     <footer>
         <div class="box">
             <p class="ImpressSM">CONTACT DETAILS</p>
-            <p class="kontakt"> Melanie Panida Müller </p>
-            <p class="kontakt"> Marktplatz 27 </p>
-            <p class="kontakt"> 78120 Furtwangen im Schwarzwald </p>
             <p class="kontakt"> E-mail: <a href="mailto:mueller.melanie.pa@googlemail.com" class="link">
-                    mueller.melanie.pa@googlemail.com </a> </p>
+                    mueller.melanie.pa(at)googlemail.com </a></p>
         </div>
     </footer>
 
     <script>
         document.querySelector('.back-top a').addEventListener('click', function (event) {
-            event.preventDefault(); // Verhindert das Standard-Verhalten des Links
+            event.preventDefault(); // Prevents the default link behavior
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // Weiches Scrollen nach oben
+                behavior: 'smooth' // Smooth scrolling to the top
             });
         });
     </script>
