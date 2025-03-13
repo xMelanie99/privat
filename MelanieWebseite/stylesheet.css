@@ -317,11 +317,9 @@ h1 {
 /* Container für das eingebettete PDF */
 .pdf-container {
     display: inline-block;
-    /* PDFs nebeneinander anzeigen */
     margin: 10px;
-    /* Etwas Abstand zwischen den PDFs */
     width: 200px;
-    /* Die Breite der PDF-Container anpassen */
+    position: relative;  /* Added relative positioning */
 }
 
 /* PDF-Label (PDF Text) */
