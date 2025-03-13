@@ -735,5 +735,15 @@ nav {
         text-align: left;
         /* Setzt den Text auf kleineren Bildschirmen auf Links-Bündig */
     }
+    nav {
+        text-align: center;
+    }
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .kontakt-box {
+        padding: 10px;
+        width: auto;
+    }
 
 }

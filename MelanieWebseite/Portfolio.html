@@ -123,7 +123,7 @@
             <div class="container">
                 <!-- Study-Related Projects -->
                 <div class="pics-text">
-                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u - boat - BLENDER"
+                    <img src="pictures-HTML/U-Boot-render.jpg" class="pic-style" alt="u-boat - BLENDER"
                         onclick="openModal(this)">
                 </div>
                 <div class="pics-text">
@@ -286,47 +286,42 @@
         });
 
 
+        // Initialisiere das Modal und Bilder-Array
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll(".container .pic-style");
+        var currentIndex = 0;
+
         // Funktion zum Öffnen des Modals
         function openModal(element) {
-            var modal = document.getElementById("myModal");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
 
-            modal.style.display = "block"; // Modal anzeigen
+            // Speichere das angeklickte Bild
+            modalImg.src = element.src;
+            captionText.innerHTML = element.alt || "Bild ohne Beschreibung";
 
-            if (element.tagName === "IMG") {
-                modalImg.src = element.src; // Bild im Modal anzeigen
-                captionText.innerHTML = element.alt || "Bild ohne Beschreibung"; // Bildbeschreibung setzen
-            }
-
-            // Index des angeklickten Bildes speichern
-            currentIndex = Array.from(element.parentNode.parentNode.children).indexOf(element.parentNode);
+            // Aktualisiere den Index basierend auf der Reihenfolge in images[]
+            currentIndex = Array.from(images).indexOf(element);
         }
 
-        // Schließen beim Klicken auf das "X"
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function () {
-            var modal = document.getElementById("myModal");
-            modal.style.display = "none"; // Modal schließen
+        // Funktion zum Schließen des Modals
+        document.getElementsByClassName("close")[0].onclick = function () {
+            modal.style.display = "none";
         }
 
-        // Schließen beim Klicken auf den Hintergrund (Leerraum)
-        var modal = document.getElementById("myModal");
-        modal.onclick = function (event) {
-            if (event.target === modal) { // Prüft, ob der Klick auf den Hintergrund (nicht das Bild) war
-                modal.style.display = "none"; // Modal schließen
-            }
-        }
-
-        // Wechseln der Bilder im Modal (Prev / Next)
-        var currentIndex = 0;
+        // Funktion zum Wechseln der Bilder im Modal (Prev / Next)
         function changeImage(direction) {
-            var images = document.querySelectorAll(".container .pic-style");
-            currentIndex = (currentIndex + direction + images.length) % images.length; // Berechnet den nächsten Index
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
+            currentIndex = (currentIndex + direction + images.length) % images.length;
             modalImg.src = images[currentIndex].src;
             captionText.innerHTML = images[currentIndex].alt;
+        }
+
+        // Schließen des Modals, wenn außerhalb geklickt wird
+        modal.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
         }
 
 
